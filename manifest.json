@@ -1,0 +1,28 @@
+{
+ "manifest_version": 3,
+ "name": "SOAP",
+ "version": "1.0",
+ "description": "Manhwa/Manga translator",
+ "icons": {
+   "128": "icon.png"
+ },
+ "action": {
+   "default_popup": "popup.html",
+   "default_icon": "icon.png"
+ },
+ "permissions": ["activeTab", "scripting", "tabs"],
+ "background": {
+   "service_worker": "background.js"
+ },
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["content.js"]
+   }
+ ],
+ "web_accessible_resources": [{
+   "resources": ["CCWildWords.ttf"],
+   "matches": ["<all_urls>"]
+ }]
+}
+
