@@ -1,0 +1,10 @@
+# API key
+config.js
+
+# Licensed font (not redistributable)
+CCWildWords.ttf
+
+# System and archive files
+.DS_Store
+__MACOSX/
+*.zip
